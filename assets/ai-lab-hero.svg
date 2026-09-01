@@ -1,0 +1,94 @@
+<svg width="900" height="360" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Anker AI Lab</title>
+  <desc id="desc">前端工程师与 AI Agent 构建者的动态个人主页横幅</desc>
+
+  <defs>
+    <linearGradient id="surface" x1="32" y1="16" x2="868" y2="344" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220" />
+      <stop offset="0.52" stop-color="#090D18" />
+      <stop offset="1" stop-color="#11102A" />
+    </linearGradient>
+    <linearGradient id="signal" x1="70" y1="70" x2="830" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF">
+        <animate attributeName="stop-color" values="#00D9FF;#7C5CFC;#00D992;#00D9FF" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="0.5" stop-color="#7C5CFC">
+        <animate attributeName="stop-color" values="#7C5CFC;#00D992;#00D9FF;#7C5CFC" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#00D992">
+        <animate attributeName="stop-color" values="#00D992;#00D9FF;#7C5CFC;#00D992" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(704 88) rotate(139) scale(242 180)">
+      <stop stop-color="#7C5CFC" stop-opacity="0.24" />
+      <stop offset="1" stop-color="#7C5CFC" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#6B7A99" stroke-opacity="0.12" stroke-width="1" />
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect x="18" y="18" width="864" height="324" rx="18" />
+    </clipPath>
+  </defs>
+
+  <rect x="18" y="18" width="864" height="324" rx="18" fill="url(#surface)" />
+  <rect x="18" y="18" width="864" height="324" rx="18" fill="url(#aura)" />
+  <rect x="18" y="18" width="864" height="324" rx="18" fill="url(#grid)" />
+  <rect x="19" y="19" width="862" height="322" rx="17" stroke="url(#signal)" stroke-width="2" stroke-dasharray="14 9">
+    <animate attributeName="stroke-dashoffset" values="0;-46" dur="3.6s" repeatCount="indefinite" />
+  </rect>
+
+  <g clip-path="url(#frame)" opacity="0.7">
+    <rect x="18" y="-60" width="864" height="52" fill="url(#signal)" opacity="0.08">
+      <animate attributeName="y" values="-60;390" dur="5.5s" repeatCount="indefinite" />
+    </rect>
+    <path d="M-40 252C132 222 226 266 391 239C547 213 652 248 940 202" stroke="url(#signal)" stroke-opacity="0.22" stroke-width="1.5" />
+    <circle cx="120" cy="248" r="4" fill="#00D9FF" filter="url(#glow)">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M0 0C172-30 266 14 431-13C587-39 692-4 980-50" />
+    </circle>
+  </g>
+
+  <g font-family="Inter, Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="66" y="70" fill="#8FA3C7" font-size="15" font-weight="600" letter-spacing="3">ANKER / AI LAB</text>
+    <circle cx="831" cy="64" r="5" fill="#00D992" filter="url(#glow)">
+      <animate attributeName="r" values="4;7;4" dur="1.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="816" y="70" fill="#8FA3C7" font-size="12" text-anchor="end" letter-spacing="1.5">ONLINE</text>
+
+    <text x="66" y="151" fill="url(#signal)" font-size="64" font-weight="750" letter-spacing="2">ANKER</text>
+    <text x="68" y="194" fill="#F4F7FF" font-size="25" font-weight="600">前端工程师 × AI Agent 构建者</text>
+    <text x="68" y="230" fill="#A8B3CF" font-size="17">构建真正可用的 AI 应用、智能体与自动化工作流。</text>
+
+    <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="13" font-weight="600">
+      <rect x="68" y="268" width="122" height="34" rx="7" fill="#00D9FF" fill-opacity="0.10" stroke="#00D9FF" stroke-opacity="0.55" />
+      <text x="129" y="290" fill="#5CE8FF" text-anchor="middle">AI AGENT</text>
+      <rect x="202" y="268" width="104" height="34" rx="7" fill="#7C5CFC" fill-opacity="0.12" stroke="#9B87FF" stroke-opacity="0.55" />
+      <text x="254" y="290" fill="#B9ACFF" text-anchor="middle">RAG / MCP</text>
+      <rect x="318" y="268" width="150" height="34" rx="7" fill="#00D992" fill-opacity="0.10" stroke="#00D992" stroke-opacity="0.55" />
+      <text x="393" y="290" fill="#58E8B8" text-anchor="middle">AUTOMATION</text>
+    </g>
+  </g>
+
+  <g opacity="0.8">
+    <circle cx="738" cy="150" r="50" stroke="#7C5CFC" stroke-opacity="0.24" />
+    <circle cx="738" cy="150" r="34" stroke="#00D9FF" stroke-opacity="0.38" stroke-dasharray="6 7">
+      <animateTransform attributeName="transform" type="rotate" from="0 738 150" to="360 738 150" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="738" cy="150" r="8" fill="#00D9FF" filter="url(#glow)">
+      <animate attributeName="fill" values="#00D9FF;#7C5CFC;#00D992;#00D9FF" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <path d="M738 100V78M788 150H810M738 200V222M688 150H666" stroke="#8FA3C7" stroke-opacity="0.45" />
+    <circle cx="738" cy="78" r="3" fill="#00D992" />
+    <circle cx="810" cy="150" r="3" fill="#7C5CFC" />
+    <circle cx="738" cy="222" r="3" fill="#00D9FF" />
+    <circle cx="666" cy="150" r="3" fill="#7C5CFC" />
+  </g>
+</svg>
